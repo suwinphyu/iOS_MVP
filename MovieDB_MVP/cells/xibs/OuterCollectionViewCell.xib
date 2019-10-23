@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="OuterCollectionViewCell" id="gTV-IL-0wX" customClass="OuterCollectionViewCell" customModule="MovieDB_MVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIq-aK-JF0">
+                        <rect key="frame" x="0.0" y="0.0" width="310" height="180"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YGL-wx-OaL">
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="180"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="EnO-sU-ace"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GR4-WZ-xae">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YGL-wx-OaL" firstAttribute="leading" secondItem="DIq-aK-JF0" secondAttribute="leading" id="DmP-1m-0yE"/>
+                            <constraint firstAttribute="bottom" secondItem="YGL-wx-OaL" secondAttribute="bottom" id="MpU-JM-2x2"/>
+                            <constraint firstAttribute="trailing" secondItem="YGL-wx-OaL" secondAttribute="trailing" id="axG-md-vrR"/>
+                            <constraint firstItem="YGL-wx-OaL" firstAttribute="top" secondItem="DIq-aK-JF0" secondAttribute="top" id="naX-yo-m44"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="DIq-aK-JF0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="59S-lc-dXe"/>
+                <constraint firstItem="DIq-aK-JF0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Kpf-Wy-Fn7"/>
+                <constraint firstAttribute="bottom" secondItem="DIq-aK-JF0" secondAttribute="bottom" id="igi-l9-Z1t"/>
+                <constraint firstAttribute="trailing" secondItem="DIq-aK-JF0" secondAttribute="trailing" id="mDB-Ij-Lqs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="310" height="180"/>
+            <connections>
+                <outlet property="outerCollectionView" destination="YGL-wx-OaL" id="n2c-wb-TaV"/>
+            </connections>
+            <point key="canvasLocation" x="326.08695652173918" y="107.8125"/>
+        </collectionViewCell>
+    </objects>
+</document>

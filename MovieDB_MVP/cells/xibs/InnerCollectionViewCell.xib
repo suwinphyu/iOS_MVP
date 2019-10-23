@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InnerCollectionViewCell" customModule="MovieDB_MVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="127" height="148"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DvG-ng-EHq">
+                        <rect key="frame" x="0.0" y="0.0" width="127" height="148"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail_food" translatesAutoresizingMaskIntoConstraints="NO" id="HFt-H0-kB1">
+                                <rect key="frame" x="0.0" y="0.0" width="127" height="148"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HFt-H0-kB1" secondAttribute="trailing" id="JT1-4W-HdX"/>
+                            <constraint firstItem="HFt-H0-kB1" firstAttribute="top" secondItem="DvG-ng-EHq" secondAttribute="top" id="LdH-Pv-OkX"/>
+                            <constraint firstAttribute="height" constant="148" id="Phg-Q0-tKO"/>
+                            <constraint firstItem="HFt-H0-kB1" firstAttribute="leading" secondItem="DvG-ng-EHq" secondAttribute="leading" id="Uai-Xu-rdT"/>
+                            <constraint firstAttribute="bottom" secondItem="HFt-H0-kB1" secondAttribute="bottom" id="xMp-28-NYz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="DvG-ng-EHq" secondAttribute="bottom" id="0Nw-yz-PdV"/>
+                <constraint firstAttribute="trailing" secondItem="DvG-ng-EHq" secondAttribute="trailing" id="2b8-ON-PgO"/>
+                <constraint firstItem="DvG-ng-EHq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="U1g-92-Pka"/>
+                <constraint firstItem="DvG-ng-EHq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gmT-UP-dtJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="127" height="148"/>
+            <connections>
+                <outlet property="imgViewPoster" destination="HFt-H0-kB1" id="zPm-vB-jlA"/>
+            </connections>
+            <point key="canvasLocation" x="193.47826086956522" y="95.758928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="detail_food" width="564" height="845"/>
+    </resources>
+</document>
